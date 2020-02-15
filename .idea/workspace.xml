@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="92639430-5c84-488a-b172-0870481e0498" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="pCVTmlOB" />
+  </component>
+  <component name="ProjectId" id="1XivwvciHU0c0wQROAO0ywj8S26" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bestSolutions" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ameli\IdeaProjects\hashcode\bestSolutions" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="pizza" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pizza" />
+      <module name="hashcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.pizza" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92639430-5c84-488a-b172-0870481e0498" name="Default Changelist" comment="" />
+      <created>1581541971475</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581541971475</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="473" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581733600950">
+      <screen x="0" y="40" width="1463" height="783" />
+    </state>
+    <state x="473" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1463.783@0.40.1463.783" timestamp="1581733600950" />
+    <state width="1420" height="167" key="GridCell.Tab.0.bottom" timestamp="1581734702032">
+      <screen x="0" y="40" width="1463" height="783" />
+    </state>
+    <state width="1420" height="167" key="GridCell.Tab.0.bottom/0.40.1463.783@0.40.1463.783" timestamp="1581734702032" />
+    <state width="1420" height="167" key="GridCell.Tab.0.center" timestamp="1581734702032">
+      <screen x="0" y="40" width="1463" height="783" />
+    </state>
+    <state width="1420" height="167" key="GridCell.Tab.0.center/0.40.1463.783@0.40.1463.783" timestamp="1581734702032" />
+    <state width="1420" height="167" key="GridCell.Tab.0.left" timestamp="1581734702032">
+      <screen x="0" y="40" width="1463" height="783" />
+    </state>
+    <state width="1420" height="167" key="GridCell.Tab.0.left/0.40.1463.783@0.40.1463.783" timestamp="1581734702032" />
+    <state width="1420" height="167" key="GridCell.Tab.0.right" timestamp="1581734702032">
+      <screen x="0" y="40" width="1463" height="783" />
+    </state>
+    <state width="1420" height="167" key="GridCell.Tab.0.right/0.40.1463.783@0.40.1463.783" timestamp="1581734702032" />
+    <state x="428" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1581713123091">
+      <screen x="0" y="40" width="1463" height="783" />
+    </state>
+    <state x="428" y="255" key="com.intellij.ide.util.TipDialog/0.40.1463.783@0.40.1463.783" timestamp="1581713123091" />
+    <state x="394" y="144" width="672" height="678" key="search.everywhere.popup" timestamp="1581714369120">
+      <screen x="0" y="40" width="1463" height="783" />
+    </state>
+    <state x="394" y="144" width="672" height="678" key="search.everywhere.popup/0.40.1463.783@0.40.1463.783" timestamp="1581714369120" />
+  </component>
+</project>
