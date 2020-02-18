@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92639430-5c84-488a-b172-0870481e0498" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/betterPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/check.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/b_small.out" beforeDir="false" afterPath="$PROJECT_DIR$/b_small.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bestSolutions/d_quite_big.out" beforeDir="false" afterPath="$PROJECT_DIR$/bestSolutions/d_quite_big.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bestSolutions/e_also_big.out" beforeDir="false" afterPath="$PROJECT_DIR$/bestSolutions/e_also_big.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c_medium.out" beforeDir="false" afterPath="$PROJECT_DIR$/c_medium.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/d_quite_big.out" beforeDir="false" afterPath="$PROJECT_DIR$/d_quite_big.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e_also_big.out" beforeDir="false" afterPath="$PROJECT_DIR$/e_also_big.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/hashcode/pizza.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hashcode/pizza.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/check.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pizza.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +46,7 @@
       <recent name="C:\Users\ameli\IdeaProjects\hashcode\bestSolutions" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.check">
+  <component name="RunManager" selected="Application.pizza">
     <configuration name="betterPizza" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="betterPizza" />
       <module name="hashcode" />
@@ -76,9 +70,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.pizza" />
         <item itemvalue="Application.check" />
         <item itemvalue="Application.betterPizza" />
-        <item itemvalue="Application.pizza" />
       </list>
     </recent_temporary>
   </component>
@@ -116,38 +110,38 @@
       <screen x="0" y="40" width="1463" height="783" />
     </state>
     <state x="93" y="133" width="1277" height="597" key="DiffContextDialog/0.40.1463.783@0.40.1463.783" timestamp="1582009739888" />
-    <state width="1420" height="151" key="GridCell.Tab.0.bottom" timestamp="1582009661582">
+    <state width="1420" height="245" key="GridCell.Tab.0.bottom" timestamp="1582010465366">
       <screen x="0" y="40" width="1463" height="783" />
     </state>
-    <state width="1420" height="151" key="GridCell.Tab.0.bottom/0.40.1463.783@0.40.1463.783" timestamp="1582009661582" />
-    <state width="1420" height="151" key="GridCell.Tab.0.center" timestamp="1582009661582">
+    <state width="1420" height="245" key="GridCell.Tab.0.bottom/0.40.1463.783@0.40.1463.783" timestamp="1582010465366" />
+    <state width="1420" height="245" key="GridCell.Tab.0.center" timestamp="1582010465366">
       <screen x="0" y="40" width="1463" height="783" />
     </state>
-    <state width="1420" height="151" key="GridCell.Tab.0.center/0.40.1463.783@0.40.1463.783" timestamp="1582009661582" />
-    <state width="1420" height="151" key="GridCell.Tab.0.left" timestamp="1582009661582">
+    <state width="1420" height="245" key="GridCell.Tab.0.center/0.40.1463.783@0.40.1463.783" timestamp="1582010465366" />
+    <state width="1420" height="245" key="GridCell.Tab.0.left" timestamp="1582010465366">
       <screen x="0" y="40" width="1463" height="783" />
     </state>
-    <state width="1420" height="151" key="GridCell.Tab.0.left/0.40.1463.783@0.40.1463.783" timestamp="1582009661582" />
-    <state width="1420" height="151" key="GridCell.Tab.0.right" timestamp="1582009661582">
+    <state width="1420" height="245" key="GridCell.Tab.0.left/0.40.1463.783@0.40.1463.783" timestamp="1582010465366" />
+    <state width="1420" height="245" key="GridCell.Tab.0.right" timestamp="1582010465366">
       <screen x="0" y="40" width="1463" height="783" />
     </state>
-    <state width="1420" height="151" key="GridCell.Tab.0.right/0.40.1463.783@0.40.1463.783" timestamp="1582009661582" />
-    <state width="1420" height="245" key="GridCell.Tab.1.bottom" timestamp="1582009113219">
+    <state width="1420" height="245" key="GridCell.Tab.0.right/0.40.1463.783@0.40.1463.783" timestamp="1582010465366" />
+    <state width="1420" height="245" key="GridCell.Tab.1.bottom" timestamp="1582010465366">
       <screen x="0" y="40" width="1463" height="783" />
     </state>
-    <state width="1420" height="245" key="GridCell.Tab.1.bottom/0.40.1463.783@0.40.1463.783" timestamp="1582009113219" />
-    <state width="1420" height="245" key="GridCell.Tab.1.center" timestamp="1582009113219">
+    <state width="1420" height="245" key="GridCell.Tab.1.bottom/0.40.1463.783@0.40.1463.783" timestamp="1582010465366" />
+    <state width="1420" height="245" key="GridCell.Tab.1.center" timestamp="1582010465366">
       <screen x="0" y="40" width="1463" height="783" />
     </state>
-    <state width="1420" height="245" key="GridCell.Tab.1.center/0.40.1463.783@0.40.1463.783" timestamp="1582009113219" />
-    <state width="1420" height="245" key="GridCell.Tab.1.left" timestamp="1582009113219">
+    <state width="1420" height="245" key="GridCell.Tab.1.center/0.40.1463.783@0.40.1463.783" timestamp="1582010465366" />
+    <state width="1420" height="245" key="GridCell.Tab.1.left" timestamp="1582010465366">
       <screen x="0" y="40" width="1463" height="783" />
     </state>
-    <state width="1420" height="245" key="GridCell.Tab.1.left/0.40.1463.783@0.40.1463.783" timestamp="1582009113219" />
-    <state width="1420" height="245" key="GridCell.Tab.1.right" timestamp="1582009113219">
+    <state width="1420" height="245" key="GridCell.Tab.1.left/0.40.1463.783@0.40.1463.783" timestamp="1582010465366" />
+    <state width="1420" height="245" key="GridCell.Tab.1.right" timestamp="1582010465366">
       <screen x="0" y="40" width="1463" height="783" />
     </state>
-    <state width="1420" height="245" key="GridCell.Tab.1.right/0.40.1463.783@0.40.1463.783" timestamp="1582009113219" />
+    <state width="1420" height="245" key="GridCell.Tab.1.right/0.40.1463.783@0.40.1463.783" timestamp="1582010465366" />
     <state x="428" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1581871011842">
       <screen x="0" y="40" width="1463" height="783" />
     </state>

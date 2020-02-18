@@ -21,7 +21,7 @@ public class pizza {
         st = new StringTokenizer(br.readLine());
 
         //set this!
-        long msToRun = 10000;
+        long timeLimitMS = 15000; //millis
 
         sliceCounts = new int[n];
         for (int i = 0; i < n; i++) {
@@ -32,7 +32,7 @@ public class pizza {
         List<Integer> bestList = new ArrayList<>();
 
         //loop with a bunch of random lists
-        while (System.currentTimeMillis() - startTime < msToRun) {
+        while (bestSum < m && System.currentTimeMillis() - startTime < timeLimitMS) {
             List<Integer> randomOrder = getRandomIndexList(n);
             //sum first elements until you reach max (m)
             int sum = 0, bor = 0, eor = 0; //beginning and end of included range
@@ -44,7 +44,7 @@ public class pizza {
             //slide right end of window while sum is still < m
             while (getSum(bor, eor, randomOrder) < m && eor + 1 < n) eor++;
             //slide left end of window until sum is below m
-            while (getSum(bor, eor, randomOrder) > m && bor + 1 < eor) bor++;
+            while (getSum(bor, eor, randomOrder) > m && bor < eor) bor++;
 
             //update if sum is better than the best sum we've seen so far (doesn't matter per random list)
             sum = getSum(bor, eor, randomOrder);
@@ -52,7 +52,7 @@ public class pizza {
                 bestSum = sum;
                 bestList = randomOrder.subList(bor, eor+1); //+1 bc exclusive
                 System.out.println("best sum: " + bestSum);
-                //System.out.println("best list: " + bestList);
+                System.out.println("best list: " + bestList);
             }
         }
 
