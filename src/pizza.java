@@ -7,73 +7,71 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class pizza {
+    public static int[] sliceCounts;
+    public static int n, m;
+
     public static void main(String[] args) throws Exception {
-        String filename = "d_quite_big";
+        String filename = "e_also_big";
         BufferedReader br = new BufferedReader(new FileReader(filename + ".in"));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        Scanner userInput = new Scanner(System.in);
+        long startTime = System.currentTimeMillis();
 
-        int m = Integer.parseInt(st.nextToken()); //max number of pizza slices to order
-        int n = Integer.parseInt(st.nextToken()); //number of types of pizza
+        m = Integer.parseInt(st.nextToken()); //max number of pizza slices to order
+        n = Integer.parseInt(st.nextToken()); //number of types of pizza
         st = new StringTokenizer(br.readLine());
 
-        List<Integer> pizzasToOrder = new ArrayList<>(); //current iteration of list of pizzas to order
-        List<Integer> bestPizzasToOrder = new ArrayList<>(); //best list of pizzas to order
-
         //set this!
-        long secondsToRun = 5; //...before prompting
+        long msToRun = 10000;
 
-        HashMap<Integer, Integer> sliceCounts = new HashMap<>(); //key: pizza index, value: slice count
+        sliceCounts = new int[n];
         for (int i = 0; i < n; i++) {
-            sliceCounts.put(i, Integer.parseInt(st.nextToken()));
+            sliceCounts[i] = Integer.parseInt(st.nextToken());
         }
-        //System.out.println(sliceCounts);
 
-        //loop until satisfactory result is achieved
-        int slicesBought, bestSlicesBought = 0;
-        int permsChecked = 0; //for curiosity only
-        while (true) {
-            long startTime = System.currentTimeMillis();
-            while (System.currentTimeMillis() - startTime < secondsToRun * 1000) {
-                pizzasToOrder = new ArrayList<>();
-                slicesBought = 0;
-                List<Integer> randomIndexList = getRandomIndexList(n);
+        int bestSum = 0;
+        List<Integer> bestList = new ArrayList<>();
 
-                int currentPizzaIndex;
-                do {
-                    currentPizzaIndex = randomIndexList.get(pizzasToOrder.size());
-                    slicesBought += sliceCounts.get(currentPizzaIndex);
-                    pizzasToOrder.add(currentPizzaIndex);
-                } while (slicesBought + sliceCounts.get(currentPizzaIndex) < m);
-                if (slicesBought > m) slicesBought -= sliceCounts.get(currentPizzaIndex);
-
-                //update best
-                if (slicesBought > bestSlicesBought) {
-                    bestSlicesBought = slicesBought;
-                    bestPizzasToOrder = pizzasToOrder;
-                    System.out.println("best slices bought: " + bestSlicesBought);
-                }
-                permsChecked++;
+        //loop with a bunch of random lists
+        while (System.currentTimeMillis() - startTime < msToRun) {
+            List<Integer> randomOrder = getRandomIndexList(n);
+            //sum first elements until you reach max (m)
+            int sum = 0, bor = 0, eor = 0; //beginning and end of included range
+            while (sum + sliceCounts[randomOrder.get(eor)] < m) {
+                sum += sliceCounts[randomOrder.get(eor)];
+                eor++;
             }
 
-            System.out.println("Continue? (yes/no)");
-            while (!userInput.hasNext()) { }
-            if (userInput.next().equals("yes")) continue;
-            else break;
+            //slide right end of window while sum is still < m
+            while (getSum(bor, eor, randomOrder) < m && eor + 1 < n) eor++;
+            //slide left end of window until sum is below m
+            while (getSum(bor, eor, randomOrder) > m && bor + 1 < eor) bor++;
+
+            //update if sum is better than the best sum we've seen so far (doesn't matter per random list)
+            sum = getSum(bor, eor, randomOrder);
+            if (sum > bestSum) {
+                bestSum = sum;
+                bestList = randomOrder.subList(bor, eor+1); //+1 bc exclusive
+                System.out.println("best sum: " + bestSum);
+                //System.out.println("best list: " + bestList);
+            }
         }
-        System.out.println("perms checked: " + permsChecked);
 
         //output best solution
         StringBuilder pizzasToOrderSB = new StringBuilder();
-        Collections.sort(bestPizzasToOrder); //just in case they want sorted
-        for (int j = 0; j < bestPizzasToOrder.size(); j++) {
-            pizzasToOrderSB.append(bestPizzasToOrder.get(j)).append(" "); //add pizza to output
+        Collections.sort(bestList); //just in case they want sorted
+        for (int j = 0; j < bestList.size(); j++) {
+            pizzasToOrderSB.append(bestList.get(j)).append(" "); //add pizza to output
         }
 
         PrintWriter pw = new PrintWriter(new FileWriter(filename + ".out"));
-        pw.println(pizzasToOrder.size()); //print number of pizzas to order
+        pw.println(bestList.size()); //print number of pizzas to order
         pw.println(pizzasToOrderSB); //print pizza indexes
         pw.close();
+    }
+
+    //takes inclusive eor (end of range)
+    public static int getSum (int bor, int eor, List<Integer> order) {
+        return order.subList(bor, eor + 1).stream().mapToInt(i -> sliceCounts[i]).sum();
     }
 
     public static List<Integer> getRandomIndexList (int length) {
