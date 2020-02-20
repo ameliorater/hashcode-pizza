@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 
 public class check {
     public static void main(String[] args) throws Exception {
-        String filename = "b_small";
+        String filename = "e_also_big";
         BufferedReader br = new BufferedReader(new FileReader("bestSolutions/" + filename + ".out"));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
